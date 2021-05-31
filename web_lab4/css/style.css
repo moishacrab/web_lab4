@@ -1,0 +1,408 @@
+*  {    
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica;
+	font-size: 18px;
+    border: 2px black solid;
+    font-weight: 400;
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header{
+    background:linear-gradient(to bottom, #f1f1f1, #d3d3d3);
+}
+.header-container{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    text-align: center;
+    font-size: 30px;
+    width: 120px;
+}
+
+.header-buttons {
+    padding: 20px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header-button {
+    font-size: 23px;
+    border: 2px black solid;
+    color: red;
+    border-radius: 10px;
+    font-weight:bold;
+    width: 150px;
+    height: 50px;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;
+}
+
+.container{
+    max-width: 1630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.hero {
+    position: relative;
+    background-image: url("https://www.carpixel.net/w/f9bf74ecd8877c00bc973abd2237d71b/audi-a8-car-wallpaper-72838.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-figure {
+    padding: 100px 0 0 0;
+}
+.hero-textaria {
+    width: 500px;
+    height: 170px;
+    background-color: rgba(189, 189, 189, 0.5);
+    border: 3px solid #cc2222;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.hero-title {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.hero-description {
+    font-size: 25px;
+    text-align: center;
+}
+
+.black-line {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 260px;
+    left: 0;
+}
+
+.red-line {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    background: rgba(219, 19, 19, 0.8);
+    bottom: 130px;
+    left: 0;
+}
+
+.yellow-line {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    background: rgba(219, 216, 21, 0.8);
+    bottom: 0px;
+    left: 0;
+}
+
+.hero-cases {
+    padding: 300px 50px 50px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-case {
+    position: relative;
+    border: 2px black solid;
+    max-width: 270px;
+    max-height: 400px;
+    color: rgb(116, 116, 116);
+    font-weight:bold;
+    border-radius: 40px;
+    font-size: 15px;
+    background:linear-gradient(to bottom, #ebebeb, #afafaf);
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+    border: 2px black solid;
+    color: red;
+    border-radius: 10px;
+    font-weight:bold;
+    width: 150px;
+    height: 60px;
+}
+
+.hero-case-text {
+    padding: 80px 20px;
+}
+
+.description {
+    position: relative;
+    background-image: url("https://img1.goodfon.ru/wallpaper/nbig/b/7d/avto-audi-audi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 300px 0;
+}
+
+.description-textaria {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(161, 202, 246);
+}
+
+.description-text {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 55px;
+    margin-top: -0.625em;
+}
+
+.footer {
+    color: whitesmoke;
+    font-size: 23px;
+}
+
+.mail {
+    text-align: right;
+}
+
+@media (min-width:1920px){}
+
+@media (min-width:992px) and (max-width:1919px){
+    .hero-button {
+        width: 100px;
+        height: 50px;
+    }
+    .hero-case {
+        border-radius: 40px;
+    }
+    .hero-cases {
+        gap: 30px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .header-button {
+        font-size: 18px;
+        width: 100px;
+        height: 40px;
+    }
+    .header-buttons {
+        gap: 12px;
+    }
+    .hero-button {
+        width: 100px;
+        height: 50px;
+    }
+    .hero-case {
+        border-radius: 40px;
+    }
+    .hero-cases {
+        padding: 200px 15px 15px;
+        gap: 20px;
+    }
+    .hero-case-text {
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .menu {
+        font-size: 20px;
+        width: 70px;
+    }
+
+    .header-button {
+        font-size: 14px;
+        width: 75px;
+        height: 30px;
+    }
+
+    .header-buttons {
+        gap: 5px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 60px;
+    }
+
+    .hero-figure {
+        padding: 80px 20px 0;
+    }
+
+    .hero-button {
+        font-size: 15px;
+        width: 70px;
+        height: 40px;
+    }
+
+    .hero-case {
+        border-radius: 40px;
+    }
+
+    .hero-cases {
+        padding: 150px 10px 10px;
+        gap: 8px;
+    }
+
+    .hero-case-text {
+        font-size: 12px;
+        padding: 30px 20px;
+    }
+
+    .description {
+        padding: 200px 0;
+    }
+
+    .description-textaria {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .description-text {
+        font-size: 20px;
+    }
+
+    .black-line {
+        height: 100px;
+        bottom: 200px;
+    }
+    
+    .red-line {
+        height: 100px;
+        bottom: 100px;
+    }
+    
+    .yellow-line {
+        height: 100px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:375px) and (max-width:575px){
+    
+    .menu {
+        font-size: 15px;
+        width: 70px;
+    }
+
+    .header-buttons {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        padding: 10px 0;
+        padding: 0 -15px 0 -15px;
+    }
+
+    .header-button {
+        font-size: 14px;
+        width: 75px;
+        height: 30px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 40px;
+    }
+
+    .hero-figure {
+        padding: 80px 20px 0;
+    }
+
+    .hero-textaria {
+        width: 300px;
+        height: 120px;
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    .hero-cases {
+        padding: 250px 50px 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .hero-case {
+        border-radius: 40px;
+    }
+
+    .hero-button {
+        font-size: 12px;
+        width: 60px;
+        height: 30px;
+    }
+
+    .hero-case-text {
+        font-size: 10px;
+        padding: 30px 20px;
+    }
+
+    .description {
+        padding: 200px 0;
+    }
+
+    .description-textaria {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-title {
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    
+    .hero-description {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+
+
+    .description {
+        padding: 150px 0;
+    }
+
+    .description-textaria {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description-text {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}
